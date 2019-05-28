@@ -32,7 +32,7 @@ class Config(object):
     APP_TYPE    = ApplicationType._VALUES_TO_NAMES[400]
     APP_VER     = '5.5.5'
     CARRIER     = '51089, 1-0'
-    SYSTEM_NAME = 'อีเกียจัดให้...!'
+    SYSTEM_NAME = 'Fc.Pea150'
     SYSTEM_VER  = '11.2.5'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
