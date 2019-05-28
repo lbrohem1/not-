@@ -800,7 +800,7 @@ async def maxgieBot(op):
             sendTemplate(op.param1, data)
             data = {
                 "type": "flex",
-                "altText": "มีคนเข้ากลุ่ม",
+                "altText": "ใครออกไปใหนหว่า",
                 "contents": {
                     "type": "bubble",
                     "hero": {
@@ -828,7 +828,7 @@ async def maxgieBot(op):
             pp = contact.pictureStatus
             data = {
                 "type": "flex",
-                "altText": "มีคนเข้ากลุ่ม",
+                "altText": "มีคนเข้ากลุ่มไปแล้วนะ",
                 "contents": {
                     "type": "bubble",
                     'styles': {
@@ -957,7 +957,7 @@ async def maxgieBot(op):
                                          maxgie.inviteIntoGroup(op.param1,[invite])
                                          apalo["winvite"] = False
                                      except:
-                                         maxgie.sendMessage(msg.to,"😧ตรวจพบข้อผิดพลาดที่ไม่ทราบสาเหตุ😩อาจเป็นได้ว่าบัญชีของคุณถูกแบนเชิญ😨")
+                                         maxgie.sendMessage(msg.to,"😧ตรวจพบข้อผิดพลาดที่ไม่ทราบสาเหตุ อาจเป็นได้ว่าบัญชีบัคเชิญ")
                                          apalo["winvite"] = False
                                          break
         if op.type == 25:
@@ -1206,7 +1206,7 @@ async def maxgieBot(op):
                         for mid in apalo["Talkblacklist"]:
                             matched_list += [x for x in groupMemberMids if x == mid]
                         if matched_list == []:
-                            duc1(to, "🌟ไม่มีหมาดำ🌟")
+                            duc1(to, "ไม่มีคนติดดำในนี้")
                         else:
                             for mids in matched_list:
                                 try:
@@ -1516,89 +1516,89 @@ async def maxgieBot(op):
                     }
                     sendTemplate(to, data)
                 if text.lower() == "help" or text.lower() == "คำสั่ง":
-                            s = "#00F5FF"
-                            sa = "•✨ me\n"
-                            sa += "•✨ /me\n"
-                            sa += "•✨ คท\n"
-                            sa += "•✨ ไอดีเรา\n"
-                            sa += "•✨ ชื่อเรา\n"
-                            sa += "•✨ ตัสเรา\n"
-                            sa += "•✨ รูปเรา\n"
-                            sa += "•✨ รูปวีดีโอเรา\n"
-                            sa += "•✨ ปกเรา\n"
-                            sa += "•✨ ข้อมูล\n"
-                            sa += "•✨ รีบอท\n"
-                            sa += "•✨ ออน\n"
-                            sa += "•✨ /ลบรัน\n"
-                            sa += "•✨ เชค\n"
-                            ss = "•✨ แทค\n"
-                            sa += "•✨ ยกเชิญ"
-                            ss += "•✨ ก็อป @user\n"
-                            ss += "•✨ กลับร่าง\n"
-                            ss += "•✨ ตั้งapi [พิมเพื่อดูวิธี]\n"
-                            ss += "•✨ ล้างapi [คำที่จะลบ]\n"
-                            ss += "•✨ เชคapi\n"
-                            ss += "•✨ stag [พิม'stag'เพื่อดูวิธี]\n"
-                            ss += "•✨ แปรงคท [MID]\n"
-                            ss += "•✨ยูทูป [ข้อความ]\n"
-                            ss += "•✨ image [text(ภาษาอังกฤษ)]\n"
-                            ss += "•✨ รูป [ข้อความ(ภาษาไทย)]\n"
-                            ss += "•✨ เพลสโต [ชื่อแอพ]\n"
-                            ss += "•✨ ตั้งรูปโปรไฟล์ [ลิ้งยูทูป]\n"
-                            ss += "•✨ ประกาศ [พิม'ประกาศ'เพื่อดูวิธี]\n"
-                            ss += "•✨ ยก [ใส่จำนวนที่จะยกเลิก]"
-                            sd = "•✨ ดำ ส่งคท.\n"
-                            sd += "•✨ ขาว ส่งคท.\n"
-                            sd += "•✨ ดำ @user\n"
-                            sd += "•✨ ล้าง @user\n"
-                            sd += "•✨ เชคดำ\n"
-                            sd += "•✨ คทดำ\n"
-                            sd += "•✨ ล้างดำ\n"
-                            sd += "•✨ ตั้งต้อนรับ [ข้อความ]\n"
-                            sd += "•✨ ตั้งคนออก [ข้อความ]\n"
-                            sd += "•✨ ตั้งแอด [ข้อความ]\n"
-                            sd += "•✨ ตั้งแทค [ข้อความ]\n"
-                            sd += "•✨ ตั้งคอมเม้น [ข้อความ]\n"
-                            sd += "•✨ ตั้งค้างเชิญ [จำนวน]\n"
-                            sd += "•✨ ตั้งมุดลิ้ง [ข้อความ]\n"
-                            sd += "•✨ ตั้งคนบล็อค [ข้อความ]"
-                            se = "•✨ เปิดแทค/ปิดแทค\n"
-                            se += "•✨ เปิดแทค2/ปิดแทค2\n"
-                            se += "•✨ เปิดแทค3/ปิดแทค3\n"
-                            se += "•✨ เปิดไลค์/ปิดไลค์\n"
-                            se += "•✨ เปิดคอมเม้น/ปิดคอมเม้น\n"
-                            se += "•✨ เปิดบล็อค/ปิดบล็อค\n"
-                            se += "•✨ เปิดแอด/ปิดแอด\n"
-                            se += "•✨ เปิดกันรัน/ปิดกันรัน\n"
-                            se += "•✨ เปิดต้อนรับ/ปิดต้อนรับ\n"
-                            se += "•✨ เปิดต้อนรับ2/ปิดต้อนรับ2\n"
-                            se += "•✨ เปิดคนออก/ปิดคนออก\n"
-                            se += "•✨ เปิดยกเลิก/ปิดยกเลิก\n"
-                            se += "•✨ เปิดติ๊กคนเข้า/ปิดติ๊กคนเข้า\n"
-                            se += "•✨ เปิดติ๊กคนออก/ปิดติ๊กคนออก\n"
-                            se += "•✨ เปิดติ๊กใหญ่/ปิดติ๊กใหญ่"
-                            sti = "•✨ เปิดมุดลิ้ง/ปิดมุดลิ้ง\n"
-                            sti += "•✨ ตั้งติ๊กคนแอด\n"
-                            sti += "•✨ ลบติ๊กคนแอด\n"
+                            s = "#FF00FF"
+                            sa = "👊 me\n"
+                            sa += "👊 /me\n"
+                            sa += "👊 คท\n"
+                            sa += "👊 ไอดีเรา\n"
+                            sa += "👊 ชื่อเรา\n"
+                            sa += "👊 ตัสเรา\n"
+                            sa += "👊 รูปเรา\n"
+                            sa += "👊 รูปวีดีโอเรา\n"
+                            sa += "👊 ปกเรา\n"
+                            sa += "👊 ข้อมูล\n"
+                            sa += "👊 รีบอท\n"
+                            sa += "👊 ออน\n"
+                            sa += "👊 /ลบรัน\n"
+                            sa += "👊 เชค\n"
+                            ss = "👊 แทค\n"
+                            sa += "👊 ยกเชิญ"
+                            ss += "👊 ก็อป @user\n"
+                            ss += "👊 กลับร่าง\n"
+                            ss += "👊 ตั้งapi [พิมเพื่อดูวิธี]\n"
+                            ss += "👊 ล้างapi [คำที่จะลบ]\n"
+                            ss += "👊 เชคapi\n"
+                            ss += "👊 stag [พิม'stag'เพื่อดูวิธี]\n"
+                            ss += "👊 แปรงคท [MID]\n"
+                            ss += "👊 ยูทูป [ข้อความ]\n"
+                            ss += "👊 image [text(ภาษาอังกฤษ)]\n"
+                            ss += "👊 รูป [ข้อความ(ภาษาไทย)]\n"
+                            ss += "👊 เพลสโต [ชื่อแอพ]\n"
+                            ss += "👊 ตั้งรูปโปรไฟล์ [ลิ้งยูทูป]\n"
+                            ss += "👊 ประกาศ [พิม'ประกาศ'เพื่อดูวิธี]\n"
+                            ss += "👊 ยก [ใส่จำนวนที่จะยกเลิก]"
+                            sd = "👊 ดำ ส่งคท.\n"
+                            sd += "👊 ขาว ส่งคท.\n"
+                            sd += "👊 ดำ @user\n"
+                            sd += "👊 ล้าง @user\n"
+                            sd += "👊 เชคดำ\n"
+                            sd += "👊 คทดำ\n"
+                            sd += "👊 ล้างดำ\n"
+                            sd += "👊 ตั้งต้อนรับ [ข้อความ]\n"
+                            sd += "👊 ตั้งคนออก [ข้อความ]\n"
+                            sd += "👊 ตั้งแอด [ข้อความ]\n"
+                            sd += "👊 ตั้งแทค [ข้อความ]\n"
+                            sd += "👊 ตั้งคอมเม้น [ข้อความ]\n"
+                            sd += "👊 ตั้งค้างเชิญ [จำนวน]\n"
+                            sd += "👊 ตั้งมุดลิ้ง [ข้อความ]\n"
+                            sd += "👊 ตั้งคนบล็อค [ข้อความ]"
+                            se = "👊 เปิดแทค/ปิดแทค\n"
+                            se += "👊 เปิดแทค2/ปิดแทค2\n"
+                            se += "👊 เปิดแทค3/ปิดแทค3\n"
+                            se += "👊 เปิดไลค์/ปิดไลค์\n"
+                            se += "👊 เปิดคอมเม้น/ปิดคอมเม้น\n"
+                            se += "👊 เปิดบล็อค/ปิดบล็อค\n"
+                            se += "👊 เปิดแอด/ปิดแอด\n"
+                            se += "👊 เปิดกันรัน/ปิดกันรัน\n"
+                            se += "👊 เปิดต้อนรับ/ปิดต้อนรับ\n"
+                            se += "👊 เปิดต้อนรับ2/ปิดต้อนรับ2\n"
+                            se += "👊 เปิดคนออก/ปิดคนออก\n"
+                            se += "👊 เปิดยกเลิก/ปิดยกเลิก\n"
+                            se += "👊 เปิดติ๊กคนเข้า/ปิดติ๊กคนเข้า\n"
+                            se += "👊 เปิดติ๊กคนออก/ปิดติ๊กคนออก\n"
+                            se += "👊 เปิดติ๊กใหญ่/ปิดติ๊กใหญ่"
+                            sti = "👊 เปิดมุดลิ้ง/ปิดมุดลิ้ง\n"
+                            sti += "👊 ตั้งติ๊กคนแอด\n"
+                            sti += "👊 ลบติ๊กคนแอด\n"
                        #     sti += "• ตั้งติ๊กแทคแชท\n"
                        #     sti += "• ลบติ๊กแทคแชท\n"
-                            sti += "•✨ ตั้งติ๊กคนแทค\n"
-                            sti += "•✨ ลบติ๊กคนแทค\n"
-                            sti += "•✨ ตั้งติ๊กคนเข้า\n"
-                            sti += "•✨ ลบติ๊กคนเข้า\n"
-                            sti += "•✨ ตั้งติ๊กคนออก\n"
-                            sti += "•✨ ลบติ๊กคนออก\n"
-                            sti += "•✨ เขียน1 [ข้อความ]\n"
-                            sti += "•✨ ไอดีไลน์ [idline]\n"
-                            sti += "•✨ ดึง @user\n"
-                            sti += "•✨ บล็อค @user\n"
-                            sti += "•✨ เพิ่มเพื่อน @user\n"
-                            sti += "•✨ ลบเพื่อน @user\n"
+                            sti += "👊 ตั้งติ๊กคนแทค\n"
+                            sti += "👊 ลบติ๊กคนแทค\n"
+                            sti += "👊 ตั้งติ๊กคนเข้า\n"
+                            sti += "👊 ลบติ๊กคนเข้า\n"
+                            sti += "👊 ตั้งติ๊กคนออก\n"
+                            sti += "👊 ลบติ๊กคนออก\n"
+                            sti += "👊 เขียน1 [ข้อความ]\n"
+                            sti += "👊 ไอดีไลน์ [idline]\n"
+                            sti += "👊 ดึง @user\n"
+                            sti += "👊 บล็อค @user\n"
+                            sti += "👊 เพิ่มเพื่อน @user\n"
+                            sti += "👊 ลบเพื่อน @user\n"
                             dataProfile = [
                                 {
                                     "type": "bubble",
                                     "styles": {
-                                        "header": {"backgroundColor":"#EE1289"},
+                                        "header": {"backgroundColor":"#FFFFFF"},
                                         "hero": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"},
                                         "footer": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"}
                                     },
@@ -1614,7 +1614,7 @@ async def maxgieBot(op):
                                             },
                                             {
                                                 "type": "text",
-                                                "text": "• คำสั่งส่วนตัว •",
+                                                "text": "HELP 1",
                                                 "size": "xxl",
                                                 "weight": "bold",
                                                 "align": "center",
@@ -1639,7 +1639,7 @@ async def maxgieBot(op):
                                             {
                                                  "type":"button",
                                                  "style":"primary",
-                                                 "color":"#00F5FF",
+                                                 "color":"#353535",
                                                  "action":{
                                                      "type":"uri",
                                                      "label":"★ʄທയஆടஷະ★ ",
@@ -1652,7 +1652,7 @@ async def maxgieBot(op):
                                 {
                                     "type": "bubble",
                                     "styles": {
-                                        "header": {"backgroundColor": "#EE1289"},
+                                        "header": {"backgroundColor": "FFFFFF"},
                                         "hero": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"},
                                         "footer": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"}
                                     },
@@ -1668,7 +1668,7 @@ async def maxgieBot(op):
                                             },
                                             {
                                                 "type": "text",
-                                                "text": "• คำสั่งพิเศษ •",
+                                                "text": "HELP 2",
                                                 "size": "xxl",
                                                 "weight": "bold",
                                                 "align": "center",
@@ -1692,7 +1692,7 @@ async def maxgieBot(op):
                                             {
                                                  "type":"button",
                                                  "style":"primary",
-                                                 "color":"#00F5FF",
+                                                 "color":"#353535",
                                                  "action":{
                                                      "type":"uri",
                                                      "label":"★ʄທയஆടஷະ★",
@@ -1705,7 +1705,7 @@ async def maxgieBot(op):
                                 {
                                     "type": "bubble",
                                     "styles": {
-                                        "header": {"backgroundColor": "#EE1289"},
+                                        "header": {"backgroundColor": "#FFFFFF"},
                                         "hero": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"},
                                         "footer": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"}
                                     },
@@ -1721,7 +1721,7 @@ async def maxgieBot(op):
                                             },
                                             {
                                                 "type": "text",
-                                                "text": "• คำสั่งเปิด/ปิด •",
+                                                "text": "HELP 3",
                                                 "size": "xxl",
                                                 "weight": "bold",
                                                 "align": "center",
@@ -1745,7 +1745,7 @@ async def maxgieBot(op):
                                             {
                                                  "type":"button",
                                                  "style":"primary",
-                                                 "color":"#00F5FF",
+                                                 "color":"#353535",
                                                  "action":{
                                                      "type":"uri",
                                                      "label":"★ʄທയஆടஷະ★",
@@ -1758,7 +1758,7 @@ async def maxgieBot(op):
                                 {
                                     "type": "bubble",
                                     "styles": {
-                                        "header": {"backgroundColor": "#EE1289"},
+                                        "header": {"backgroundColor": "#FFFFFF"},
                                         "hero": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"},
                                         "footer": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"}
                                     },
@@ -1774,7 +1774,7 @@ async def maxgieBot(op):
                                             },
                                             {
                                                 "type": "text",
-                                                "text": "• คำสั่งตั้งค่า/ติดดำ •",
+                                                "text": "HELP 4",
                                                 "size": "xxl",
                                                 "weight": "bold",
                                                 "align": "center",
@@ -1821,7 +1821,7 @@ async def maxgieBot(op):
                                             {
                                                  "type":"button",
                                                  "style":"primary",
-                                                 "color":"#00F5FF",
+                                                 "color":"#353535",
                                                  "action":{
                                                      "type":"uri",
                                                      "label":"★ʄທയஆടஷະ★ ",
@@ -1834,7 +1834,7 @@ async def maxgieBot(op):
                                 {
                                     "type": "bubble",
                                     "styles": {
-                                        "header": {"backgroundColor": "#EE1289"},
+                                        "header": {"backgroundColor": "#FFFFFF"},
                                         "hero": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"},
                                         "footer": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"}
                                     },
@@ -1850,7 +1850,7 @@ async def maxgieBot(op):
                                             },
                                             {
                                                 "type": "text",
-                                                "text": "• คำสั่งทั่วไป •",
+                                                "text": "HELP 5",
                                                 "size": "xxl",
                                                 "weight": "bold",
                                                 "align": "center",
@@ -1874,7 +1874,7 @@ async def maxgieBot(op):
                                             {
                                                  "type":"button",
                                                  "style":"primary",
-                                                 "color":"#00F5FF",
+                                                 "color":"#353535",
                                                  "action":{
                                                      "type":"uri",
                                                      "label":"★ʄທയஆടஷະ★ ",
@@ -2009,7 +2009,7 @@ async def maxgieBot(op):
                     timeNow = datetime.now(tz=tz)
                     eltime = time.time() - mulai
                     van = ggggg(eltime)
-                    van2 = "\n\n✨วันที่ :"+ datetime.strftime(timeNow,'%d-%m-%Y')+"\n───────────\n◐เวลา:"+ datetime.strftime(timeNow,'%H:%M:%S')+"\n\n"      
+                    van2 = "\n\nวันที่ :"+ datetime.strftime(timeNow,'%d-%m-%Y')+"\n───────────\nเวลา:"+ datetime.strftime(timeNow,'%H:%M:%S')+"\n\n"      
                     data={
 "type":"flex",
 "altText":"Weclome",
@@ -2029,7 +2029,7 @@ async def maxgieBot(op):
 "contents": [
 {
 "type": "text",
-"text": "✨ ออน ✨",
+"text": "runtime",
 "align": "center",
 "size": "lg",
 "weight": "bold",
@@ -2067,7 +2067,7 @@ async def maxgieBot(op):
 {
 "contents": [
 {
-"text": "✨ระยะเวลาของบอท✨",
+"text": "ระยะเวลาของบอท",
 "size": "md",
 "align": "center",
 "color": "#00F5FF",
@@ -2144,7 +2144,7 @@ async def maxgieBot(op):
 "action": {
 "type": "uri",
 "label": "ติดต่อเชล",
-"uri": "https://line.me/ti/p/~nonbysignal",
+"uri": "line://nv/profilePopup/mid=ue846139824ec13384cbb921b460323ac",
 }
 },
 {
@@ -2157,7 +2157,7 @@ async def maxgieBot(op):
 "action": {
 "type": "uri",
 "label": "ติดต่อผู้สร้าง",
-"uri": "https://line.me/ti/p/~nonbysignal",
+"uri": "line://nv/profilePopup/mid=ue846139824ec13384cbb921b460323ac",
 }
 }
 ]
@@ -2176,7 +2176,7 @@ async def maxgieBot(op):
 "contents": [
 {
 "type": "text",
-"text": "✨ ปฏิทิน ✨",
+"text": "ปฏิทิน ",
 "align": "center",
 "size": "lg",
 "weight": "bold",
@@ -2214,7 +2214,7 @@ async def maxgieBot(op):
 {
 "contents": [
 {
-"text": "✨วันเดือนปีและเวลา✨",
+"text": "วันเดือนปีและเวลา",
 "size": "md",
 "align": "center",
 "color": "#00F5FF",
@@ -2291,7 +2291,7 @@ async def maxgieBot(op):
 "action": {
 "type": "uri",
 "label": "ติดต่อเชล",
-"uri": "https://line.me/ti/p/~nonbysignal",
+"uri": "line://nv/profilePopup/mid=ue846139824ec13384cbb921b460323ac",
 }
 },
 {
@@ -2304,7 +2304,7 @@ async def maxgieBot(op):
 "action": {
 "type": "uri",
 "label": "ติดต่อผู้สร้าง",
-"uri": "https://line.me/ti/p/~nonbysignal",
+"uri": "line://nv/profilePopup/mid=ue846139824ec13384cbb921b460323ac",
 }
 }
 ]
@@ -2364,7 +2364,7 @@ async def maxgieBot(op):
                                 {
                                   "contents": [
                                     {
-                                      "text": "✨ระยะเวลาทำงาน✨",
+                                      "text": "ระยะเวลาทำงาน",
                                       "size": "lg",
                                       "align": "center",
                                       "color": "#00F5FF",
@@ -2453,7 +2453,7 @@ async def maxgieBot(op):
                     a = temp["t"]
                     data={"type":"flex","altText":"{} sendFlex".format(name),"contents":{"type":"bubble",'styles': {"body":{"backgroundColor":a}},"hero":{"type":"image","url":cover,"size":"full","aspectRatio":"20:13","aspectMode":"cover"},"body":{"type":"box","layout":"vertical","contents":[{"type":"text","text":" "},{"type":"image","url":profile,"size":"lg"},{"type":"text","text":" "},{"type":"text","text":name,"size":"xl","weight":"bold","color":s,"align":"center"},{"type":"text","text":" "},{"type":"text","text":status,"align":"center","size":"xs","color":s,"wrap":True},{"type":"text","text":" "},{"type":"button","style":"primary","color":"#EE1289","action":{"type":"uri","label":"★ʄທയஆടஷະ★ ","uri":"https://sv1.picz.in.th/images/2019/05/19/wubKKl.gif"}}]}}}
                     sendTemplate(to, data)
-                elif text.lower() == "เรา2":
+                elif text.lower() == "me2":
                             s = temp["te"]
                             a = temp["t"]
                             contact = maxgie.getContact(maxgieMID)
@@ -2618,7 +2618,7 @@ async def maxgieBot(op):
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "ชื่อของคุณ",
+                                                "text": "ชื่อ. ",
                                                 "size": "lg",
                                                 "weight": "bold",
                                                 "align": "center",
@@ -2640,7 +2640,7 @@ async def maxgieBot(op):
                                             },
                                             {
                                                 "type": "text",
-                                                "text": "สเตตัสของคุณ ",
+                                                "text": "สเตตัส ",
                                                 "size": "lg",
                                                 "weight": "bold",
                                                 "align": "center",
@@ -2719,7 +2719,7 @@ async def maxgieBot(op):
                         } 
                     }
                     sendTemplate(to, data)                            
-                elif text.lower() == "/runtime" or text.lower() == "/ออน":
+                elif text.lower() == "/runtime" or text.lower() == "!ออน":
                     timeNow = time.time() - Start
                     runtime = timeChange(timeNow)
                     run = "⇨ เวลาออน ⇦\n"
@@ -2781,7 +2781,7 @@ async def maxgieBot(op):
                     }
                     sendTemplate(to, data)
                 elif text.lower() == "รีบอท" or text.lower() == "reset":
-                    gifnya = ["https://i.pinimg.com/originals/2e/d7/37/2ed737ba301b048afdb355fd9d1c2e86.gif"]
+                    gifnya = ["https://sv1.picz.in.th/images/2019/05/19/wubKKl.gif"]
                     data = {
                         "type": "template",
                         "altText": "กำลังรีบอท...",
@@ -2816,10 +2816,10 @@ async def maxgieBot(op):
                 elif text.lower() == "Sp" or text.lower() == "สปีด":                       
                     contact = maxgie.getContact(sender)
                     start = time.time()
-                    maxgie.sendMessage(to, "✨ทดสอบความเร็ว✨")
+                    maxgie.sendMessage(to, "ทดสอบความเร็ว")
                     elapsed_time = time.time() - start
                     took = time.time() - start
-                    a = " สปีดบอท \n🇹🇭ความเร็วปิง ✔️\n 🇹🇭 Took : %.3fms ✔️\n🇹🇭ความเร็วสปีด: %.10f ✔️" % (took,elapsed_time)
+                    a = " สปีดบอท \nความเร็วปิง ✔️\n Took : %.3fms ✔️\nความเร็วสปีด: %.10f ✔️" % (took,elapsed_time)
                     LINKFOTO = "https://os.line.naver.jp/os/p/" + sender
                     LINKVIDEO = "https://os.line.naver.jp/os/p/" + sender + "/vp"                            
                     data = {
@@ -2829,7 +2829,7 @@ async def maxgieBot(op):
                                     "type": "bubble",
                                         'styles': {
                                             "header": {
-                                                "backgroundColor": '#EE1289'
+                                                "backgroundColor": '#13C500'
                                             },
                                             "footer": {
                                                 "backgroundColor": '#000000'
@@ -2933,7 +2933,7 @@ async def maxgieBot(op):
                                 maxgie.acquireGroupCallRoute(to)
                                 maxgie.inviteIntoGroupCall(to, contactIds=members)
                             ret_ += "\n├> @!"
-                        ret_ += "\n╰──────────"
+                        ret_ += "\n╰─── ★ʄທയஆടஷະ★ "
                         maxgie.sendPhu(to, ret_, lists)   
                                         
                 elif "Spam " in msg.text:
@@ -3332,7 +3332,7 @@ async def maxgieBot(op):
 "align": "center",
 "size": "lg",
 "weight": "bold",
-"color": "#00F5FF",
+"color": "#FFD300",
 "wrap": True
 }
 ]
@@ -3369,7 +3369,7 @@ async def maxgieBot(op):
 "text": sa,
 "size": "md",
 "align": "center",
-"color": "#00F5FF",
+"color": "#FFD300",
 "wrap": True,
 "weight": "bold",
 "type": "text"
@@ -3411,7 +3411,7 @@ async def maxgieBot(op):
 "text": " ★ʄທയஆടஷະ★ ",
 "size": "xs",
 "margin": "none",
-"color": "#00F5FF",
+"color": "#FFD300",
 "wrap": True,
 "weight": "regular",
 "type": "text"
@@ -3438,7 +3438,7 @@ async def maxgieBot(op):
 "type": "button",
 "flex": 2,
 "style": "primary",
-"color": "#00F5FF",
+"color": "#FFD300",
 "height": "sm",
 "action": {
 "type": "uri",
@@ -3450,7 +3450,7 @@ async def maxgieBot(op):
 "flex": 3,
 "type": "button",
 "style": "primary",
-"color": "#00F5FF",
+"color": "#FFD300",
 "margin": "sm",
 "height": "sm",
 "action": {
@@ -4997,7 +4997,7 @@ async def maxgieBot(op):
                                           pk = str(tagadd["tag"])
                                           tz = pytz.timezone("Asia/Jakarta")
                                           timeNow = datetime.now(tz=tz)
-                                          van2 = "✨เวลา:"+ datetime.strftime(timeNow,'%H:%M:%S')                                 	
+                                          van2 = "เวลา:"+ datetime.strftime(timeNow,'%H:%M:%S')                                 	
                                           data = {
 "type":"flex",
 "altText": pk, 
