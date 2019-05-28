@@ -1515,7 +1515,7 @@ async def maxgieBot(op):
                         }
                     }
                     sendTemplate(to, data)
-                if text.lower() == "help" or text.lower() == "คำสั่ง":
+                if text.lower() == "!help" or text.lower() == "!คำสั่ง":
                             s = "#FF00FF"
                             sa = "•👊 me\n"
                             sa += "•👊 /me\n"
@@ -1895,6 +1895,387 @@ async def maxgieBot(op):
                             }
                             sendTemplate(to, data)
 #=====================================================================
+                if text.lower() == "help" or text.lower() == "คำสั่ง":
+                            s = "#FFFFFF"
+                            sa = "•✨ me\n"
+                            sa += "•✨ /me\n"
+                            sa += "•✨ คท\n"
+                            sa += "•✨ ไอดีเรา\n"
+                            sa += "•✨ ชื่อเรา\n"
+                            sa += "•✨ ตัสเรา\n"
+                            sa += "•✨ รูปเรา\n"
+                            sa += "•✨ รูปวีดีโอเรา\n"
+                            sa += "•✨ ปกเรา\n"
+                            sa += "•✨ ข้อมูล\n"
+                            sa += "•✨ รีบอท\n"
+                            sa += "•✨ ออน\n"
+                            sa += "•✨ /ลบรัน\n"
+                            sa += "•✨ เชค\n"
+                            ss = "•✨ แทค\n"
+                            sa += "•✨ ยกเชิญ"
+                            ss += "•✨ ก็อป @user\n"
+                            ss += "•✨ กลับร่าง\n"
+                            ss += "•✨ ตั้งapi [พิมเพื่อดูวิธี]\n"
+                            ss += "•✨ ล้างapi [คำที่จะลบ]\n"
+                            ss += "•✨ เชคapi\n"
+                            ss += "•✨ stag [พิม'stag'เพื่อดูวิธี]\n"
+                            ss += "•✨ แปรงคท [MID]\n"
+                            ss += "•✨ยูทูป [ข้อความ]\n"
+                            ss += "•✨ image [text(ภาษาอังกฤษ)]\n"
+                            ss += "•✨ รูป [ข้อความ(ภาษาไทย)]\n"
+                            ss += "•✨ เพลสโต [ชื่อแอพ]\n"
+                            ss += "•✨ ตั้งรูปโปรไฟล์ [ลิ้งยูทูป]\n"
+                            ss += "•✨ ประกาศ [พิม'ประกาศ'เพื่อดูวิธี]\n"
+                            ss += "•✨ ยก [ใส่จำนวนที่จะยกเลิก]"
+                            sd = "•✨ ดำ ส่งคท.\n"
+                            sd += "•✨ ขาว ส่งคท.\n"
+                            sd += "•✨ ดำ @user\n"
+                            sd += "•✨ ล้าง @user\n"
+                            sd += "•✨ เชคดำ\n"
+                            sd += "•✨ คทดำ\n"
+                            sd += "•✨ ล้างดำ\n"
+                            sd += "•✨ ตั้งต้อนรับ [ข้อความ]\n"
+                            sd += "•✨ ตั้งคนออก [ข้อความ]\n"
+                            sd += "•✨ ตั้งแอด [ข้อความ]\n"
+                            sd += "•✨ ตั้งแทค [ข้อความ]\n"
+                            sd += "•✨ ตั้งคอมเม้น [ข้อความ]\n"
+                            sd += "•✨ ตั้งค้างเชิญ [จำนวน]\n"
+                            sd += "•✨ ตั้งมุดลิ้ง [ข้อความ]\n"
+                            sd += "•✨ ตั้งคนบล็อค [ข้อความ]"
+                            se = "•✨ เปิดแทค/ปิดแทค\n"
+                            se += "•✨ เปิดแทค2/ปิดแทค2\n"
+                            se += "•✨ เปิดแทค3/ปิดแทค3\n"
+                            se += "•✨ เปิดไลค์/ปิดไลค์\n"
+                            se += "•✨ เปิดคอมเม้น/ปิดคอมเม้น\n"
+                            se += "•✨ เปิดบล็อค/ปิดบล็อค\n"
+                            se += "•✨ เปิดแอด/ปิดแอด\n"
+                            se += "•✨ เปิดกันรัน/ปิดกันรัน\n"
+                            se += "•✨ เปิดต้อนรับ/ปิดต้อนรับ\n"
+                            se += "•✨ เปิดต้อนรับ2/ปิดต้อนรับ2\n"
+                            se += "•✨ เปิดคนออก/ปิดคนออก\n"
+                            se += "•✨ เปิดยกเลิก/ปิดยกเลิก\n"
+                            se += "•✨ เปิดติ๊กคนเข้า/ปิดติ๊กคนเข้า\n"
+                            se += "•✨ เปิดติ๊กคนออก/ปิดติ๊กคนออก\n"
+                            se += "•✨ เปิดติ๊กใหญ่/ปิดติ๊กใหญ่"
+                            sti = "•✨ เปิดมุดลิ้ง/ปิดมุดลิ้ง\n"
+                            sti += "•✨ ตั้งติ๊กคนแอด\n"
+                            sti += "•✨ ลบติ๊กคนแอด\n"
+                       #     sti += "• ตั้งติ๊กแทคแชท\n"
+                       #     sti += "• ลบติ๊กแทคแชท\n"
+                            sti += "•✨ ตั้งติ๊กคนแทค\n"
+                            sti += "•✨ ลบติ๊กคนแทค\n"
+                            sti += "•✨ ตั้งติ๊กคนเข้า\n"
+                            sti += "•✨ ลบติ๊กคนเข้า\n"
+                            sti += "•✨ ตั้งติ๊กคนออก\n"
+                            sti += "•✨ ลบติ๊กคนออก\n"
+                            sti += "•✨ เขียน1 [ข้อความ]\n"
+                            sti += "•✨ ไอดีไลน์ [idline]\n"
+                            sti += "•✨ ดึง @user\n"
+                            sti += "•✨ บล็อค @user\n"
+                            sti += "•✨ เพิ่มเพื่อน @user\n"
+                            sti += "•✨ ลบเพื่อน @user\n"
+                            dataProfile = [
+                                {
+                                    "type": "bubble",
+                                    "styles": {
+                                        "header": {"backgroundColor":"#EE1289"},
+                                        "hero": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"},
+                                        "footer": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"}
+                                    },
+                                    "header": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "spacing": "sm",
+                                        "contents": [
+                                            {
+                                               "type": "image",
+                                                "url": "https://obs.line-scdn.net/{}".format(maxgie.getContact(maxgieMID).pictureStatus),
+                                                "size": "full"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "• คำสั่งส่วนตัว •",
+                                                "size": "xxl",
+                                                "weight": "bold",
+                                                "align": "center",
+                                                "color": s
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": sa,
+                                                "color": s, 
+                                                "wrap": True,
+                                                "gravity": "center",
+                                        #        "size": "md"
+                                            },
+                                            { 
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                 "type":"button",
+                                                 "style":"primary",
+                                                 "color":"#00F5FF",
+                                                 "action":{
+                                                     "type":"uri",
+                                                     "label":"★ʄທയஆടஷະ★ ",
+                                                     "uri":"line://nv/profilePopup/mid=ue846139824ec13384cbb921b460323ac"
+                                                 },
+                                            },
+                                        ]
+                                    },
+                                },
+                                {
+                                    "type": "bubble",
+                                    "styles": {
+                                        "header": {"backgroundColor": "#EE1289"},
+                                        "hero": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"},
+                                        "footer": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"}
+                                    },
+                                    "header": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "spacing": "sm",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": "https://obs.line-scdn.net/{}".format(maxgie.getContact(maxgieMID).pictureStatus),
+                                                "size": "full"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "• คำสั่งพิเศษ •",
+                                                "size": "xxl",
+                                                "weight": "bold",
+                                                "align": "center",
+                                                "color": s
+                                            },
+                                            { 
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ss, 
+                                                "color": s,
+                                                "wrap": True,
+                                                "gravity": "center",
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                 "type":"button",
+                                                 "style":"primary",
+                                                 "color":"#00F5FF",
+                                                 "action":{
+                                                     "type":"uri",
+                                                     "label":"★ʄທയஆടஷະ★",
+                                                     "uri":"line://nv/profilePopup/mid=ue846139824ec13384cbb921b460323ac"
+                                                 },
+                                            },
+                                        ]
+                                    },
+                                },
+                                {
+                                    "type": "bubble",
+                                    "styles": {
+                                        "header": {"backgroundColor": "#EE1289"},
+                                        "hero": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"},
+                                        "footer": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"}
+                                    },
+                                    "header": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "spacing": "sm",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": "https://obs.line-scdn.net/{}".format(maxgie.getContact(maxgieMID).pictureStatus),
+                                                "size": "full"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "• คำสั่งเปิด/ปิด •",
+                                                "size": "xxl",
+                                                "weight": "bold",
+                                                "align": "center",
+                                                "color": s
+                                            },
+                                            { 
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": sd, 
+                                                "color": s,
+                                                "wrap": True,
+                                                "gravity": "center",
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                 "type":"button",
+                                                 "style":"primary",
+                                                 "color":"#00F5FF",
+                                                 "action":{
+                                                     "type":"uri",
+                                                     "label":"★ʄທയஆടஷະ★",
+                                                     "uri":"line://nv/profilePopup/mid=ue846139824ec13384cbb921b460323ac"
+                                                 },
+                                            },
+                                        ]
+                                    },
+                                },
+                                {
+                                    "type": "bubble",
+                                    "styles": {
+                                        "header": {"backgroundColor": "#EE1289"},
+                                        "hero": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"},
+                                        "footer": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"}
+                                    },
+                                    "header": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "spacing": "sm",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": "https://obs.line-scdn.net/{}".format(maxgie.getContact(maxgieMID).pictureStatus),
+                                                "size": "full"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "• คำสั่งตั้งค่า/ติดดำ •",
+                                                "size": "xxl",
+                                                "weight": "bold",
+                                                "align": "center",
+                                                "color": s
+                                            },
+                                            { 
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                          #  {
+                                          #      "type": "text",
+                                           #     "text": " "
+                                         #   },
+                                         #   {
+                                            #    "type": "text",
+                                           #     "text": " "
+                                          #  },
+                                            {
+                                                "type": "text",
+                                                "text": se, 
+                                                "color": s,
+                                           #     "size": "lg",
+                                                "wrap": True,
+                                                "gravity": "center",
+                                            },
+                                            #{
+                                            #    "type": "text",
+                                            #    "text": " "
+                                           # },
+                                          #  {
+                                           #     "type": "text",
+                                            #    "text": " "
+                                           # },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                          #  {
+                                          #      "type": "text",
+                                          #      "text": "สนใจบอท ติดต่อได้ที่ปุ่มเลยค้ะ >_<",
+                                          #      "color": "#B5B5B5",
+                                          #      "size": "xs"
+                                          #  },
+                                            {
+                                                 "type":"button",
+                                                 "style":"primary",
+                                                 "color":"#00F5FF",
+                                                 "action":{
+                                                     "type":"uri",
+                                                     "label":"★ʄທയஆടஷະ★ ",
+                                                     "uri":"line://nv/profilePopup/mid=ue846139824ec13384cbb921b460323ac"
+                                                 },
+                                            },
+                                        ]
+                                    },
+                                },
+                                {
+                                    "type": "bubble",
+                                    "styles": {
+                                        "header": {"backgroundColor": "#EE1289"},
+                                        "hero": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"},
+                                        "footer": {"backgroundColor": "#000000"}, #"separator": True, "separatorColor": "#333333"}
+                                    },
+                                    "header": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "spacing": "sm",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": "https://obs.line-scdn.net/{}".format(maxgie.getContact(maxgieMID).pictureStatus),
+                                                "size": "full"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "• คำสั่งทั่วไป •",
+                                                "size": "xxl",
+                                                "weight": "bold",
+                                                "align": "center",
+                                                "color": s
+                                            },
+                                            { 
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": sti, 
+                                                "color": s,
+                                                "wrap": True,
+                                                "gravity": "center",
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                 "type":"button",
+                                                 "style":"primary",
+                                                 "color":"#00F5FF",
+                                                 "action":{
+                                                     "type":"uri",
+                                                     "label":"★ʄທയஆടஷະ★ ",
+                                                     "uri":"line://nv/profilePopup/mid=ue846139824ec13384cbb921b460323ac"
+                                                 },
+                                            },
+                                        ]
+                                    },
+                                },
+                            ]
+                            data = {
+                                "type": "flex",
+                                "altText": "Help Message",
+                                "contents": {
+                                    "type": "carousel",
+                                    "contents": dataProfile
+                                }
+                            }
+                            sendTemplate(to, data)
+#=====================================================================
+   
                 elif msg.text.lower().startswith("ก็อป "):
                             if 'MENTION' in msg.contentMetadata.keys()!= None:
                                 names = re.findall(r'@(\w+)', text)
