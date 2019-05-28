@@ -148,7 +148,7 @@ apalo = {
     "Talkwblacklist": False,
     "Talkdblacklist": False,
 }
-temp = {"te": "#000000","t": "#A1A1A1"}
+temp = {"te": "#000000","t": "#FFC000"}
 read = {
     "readPoint": {},
     "readMember": {},
