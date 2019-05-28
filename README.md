@@ -1,15 +1,15 @@
 # non อัพเดตแล้ว
 
-NON BOT LINE
 
 
 
-Bot flex non bot line 
 
 
-Botflex by. Non
 
-สคลิปคนเหี้ย แจกฟรีไม่คิดตังค์
+
+
+
+
 
 apt-get install nodejs -y
 
@@ -75,12 +75,12 @@ pip3 install pytz
 
 pip3 install wikipedia
 
-cd non
 
-python3 mmx.py
 
-Bot flex by. non bot line
 
- (free) scip 
 
-คนเหี้ยแจกฟรีไม่คิดเงิน
+
+
+
+
+
